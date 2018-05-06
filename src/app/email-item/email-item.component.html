@@ -1,4 +1,4 @@
-<div class="email-item" [ngClass]="{'error': !valid}">
+<div class="email-item" [ngClass]="{'error': error}">
   <div class="email">{{ email }}</div>
   <button type="button" class="action" (click)="remove.emit(email)"></button>
 </div>
