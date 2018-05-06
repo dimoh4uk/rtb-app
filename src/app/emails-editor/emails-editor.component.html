@@ -1,0 +1,16 @@
+<div class="email-editor-body" (click)="setFocus($event, input)">
+  <div class="scroll-block">
+    <div class="item" *ngFor="let email of emails">
+      <app-email-item [email]="email" (remove)="remove(email)"></app-email-item>
+    </div>
+    <div class="input">
+      <input #input
+             [(ngModel)]="currentEmail"
+             (keyup)="keyUp($event)"
+             (blur)="pushEmail()"
+             (paste)="pasteEmail()"
+             type="text" placeholder="add more people...">
+    </div>
+  </div>
+</div>
+

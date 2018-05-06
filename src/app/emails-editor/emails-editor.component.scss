@@ -1,0 +1,22 @@
+.email-editor-body {
+  height: 102px;
+  background: #fff;
+  margin: 30px 0;
+  overflow-y: auto;
+}
+
+.item {
+  float: left;
+  margin: 5px;
+}
+
+.input {
+  overflow: hidden;
+  min-width: 200px;
+  input {
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    padding: 8px;
+  }
+}

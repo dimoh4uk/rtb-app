@@ -1,0 +1,14 @@
+<div class="form">
+  <form action="">
+    <div class="form-content">
+      <div class="form-title">Share <b>Board name</b> with other</div>
+      <app-emails-editor [(emails)]="emails" (changes)="emailsOnChange($event)"></app-emails-editor>
+    </div>
+    <div class="form-footer">
+      <div class="button-group">
+        <button class="button" type="button" (click)="addRandomEmail()">Add random email</button>
+        <button class="button" type="button" (click)="alertEmailCount()">Get email count</button>
+      </div>
+    </div>
+  </form>
+</div>
