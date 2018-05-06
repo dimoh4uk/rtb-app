@@ -7,7 +7,7 @@ import {functions} from '../helpers/functions';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  private emails: Array<string> = [];
+  emails: Array<string> = [];
   public title = 'app';
 
   emailsOnChange(event: any) {
